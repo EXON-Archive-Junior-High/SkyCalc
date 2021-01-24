@@ -1,2 +1,2 @@
-# ReactTypescriptTemplate
-리엑트 타입스크립트 템플릿
+# SkyBlock Calculator
+하이픽셀 스카이블럭 데미지, EHP 계산기
