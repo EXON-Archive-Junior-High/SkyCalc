@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import './css/App.css'
 
 import Bar from './components/Bar'
+const { Route, BrowserRouter, Switch } = require('react-router-dom')
 
 export default class App extends Component {
     render() {
