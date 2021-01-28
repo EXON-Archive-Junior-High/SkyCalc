@@ -6,6 +6,11 @@ export default class Damage extends Component {
         return (
             <div>
                 <Bar />
+                <div className="main">
+                    <h1>dd</h1>
+                </div>
+                
+                
             </div>
         )
     }

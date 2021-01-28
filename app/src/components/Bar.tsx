@@ -6,8 +6,9 @@ export default class Bar extends Component {
             <div>
                 <div className="bar">
                     <div className="content">
-                        <a>SkyBlock Calculator</a>
-                        <a>skystats</a>
+                        <a href="/">SkyBlock Calculator</a>
+                        <a href="/damage">Damage</a>
+                        <a href="/ehp">EHP</a>
                     </div>
                 </div>
             </div>

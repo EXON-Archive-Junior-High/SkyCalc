@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './css/App.css'
 
-import Bar from './components/Bar'
+import Home from './components/Home'
 import Damage from './components/Damage'
 import EHP from './components/EHP'
 
@@ -12,7 +12,7 @@ export default class App extends Component {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route path="/" component={Bar} />
+                    
                     <Route path="/damage" component={Damage} />
                     <Route path="/ehp" component={EHP} />
                 </Switch>

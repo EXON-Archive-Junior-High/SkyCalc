@@ -6,6 +6,7 @@ export default class EHP extends Component {
         return (
             <div>
                 <Bar />
+                
             </div>
         )
     }
