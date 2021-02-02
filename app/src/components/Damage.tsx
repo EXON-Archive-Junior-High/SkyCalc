@@ -7,7 +7,10 @@ export default class Damage extends Component {
             <div>
                 <Bar />
                 <div className="main">
-                    <h1>dd</h1>
+                    <input className="first"></input><input className="second"></input>
+                    <br></br>
+                    <hr className="first"/><hr className="second"/>
+                    <p className="first">Strength</p><p className="second">Strength</p>
                 </div>
                 
                 
