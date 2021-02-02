@@ -37,6 +37,7 @@
 .main p {
     font-weight: bold;
     margin-left: 5px;
+    margin-top: -5px;
 }
 
 .main hr {
@@ -44,14 +45,18 @@
     width: 100px;
     text-align: left;
     margin-left: 5px;
+    margin-top: -10px;
 }
 
-.main .first {
+.main h1 {
+    font-size: 100px;
+    margin-right: 70px;
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+.main .float {
     float: left;
-}
-
-.main .second {
-    padding-left: 500px;
 }
 
 a:link { color: #FEFEFE; text-decoration: none;}

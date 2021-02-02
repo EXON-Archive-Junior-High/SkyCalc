@@ -1,6 +1,11 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url('../font/bebas-neue-v2-latin-regular.woff2');
+}
+
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif !important;
+  font-family: BebasNeue;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
