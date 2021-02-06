@@ -1,5 +1,15 @@
 @import 'reset.css';
 
+@font-face {
+    font-family: BebasNeue, 'Courier New', Courier, monospace;
+    src: url('../font/bebas-neue-v2-latin-regular.woff2');
+}
+
+body {
+    font-family: BebasNeue;
+    background-color: #ECEFF4;
+}
+
 .bar {
     position: flex;
     background-color: #282828;
@@ -9,9 +19,14 @@
     align-items: flex-end;
 }
 
+.bar img {
+    vertical-align: middle;
+}
+
 .bar .content {
     vertical-align: middle;
     line-height: 50px;
+    font-size: 30px;
     color: #FEFEFE;
 }
 
@@ -25,34 +40,42 @@
     padding-left: 4em;
 }
 
-.main input {
+.center {
+    
+}
+
+.main > .float > input {
+    color: transparent;
+    text-shadow: 0 0 0 black;
     border: none;
     background: transparent;
     width: 150px;
     outline: none;
     font-size: 60px;
     text-align: left;
+    font-family: BebasNeue, 'Courier New', Courier, monospace;
 }
 
-.main p {
+.main > .float > p {
     font-weight: bold;
     margin-left: 5px;
     margin-top: -5px;
+    font-size: 17px;
 }
 
-.main hr {
+.main > .float > hr {
     border: 2px solid black;
     width: 100px;
     text-align: left;
     margin-left: 5px;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
-.main h1 {
+.main > h1 {
     font-size: 100px;
     margin-right: 70px;
     margin-left: 20px;
-    font-weight: 100;
+    font-weight: 900;
 }
 
 .main .float {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import logo from '../img/logo.png'
 
 export default class Bar extends Component {
     render() {
@@ -6,7 +7,7 @@ export default class Bar extends Component {
             <div>
                 <div className="bar">
                     <div className="content">
-                        <a href="/">SkyBlock Calculator</a>
+                        <a href="/"><img src={logo} height="40px"/></a>
                         <a href="/damage">Damage</a>
                         <a href="/ehp">EHP</a>
                     </div>
