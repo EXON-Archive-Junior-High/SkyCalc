@@ -37,16 +37,16 @@ body {
 
 .main {
     padding-top: 4em;
+}
+
+.calc {
     padding-left: 4em;
+    padding-bottom: 4em;
 }
 
-.center {
-    
-}
-
-.main > .float > input {
+.main > .calc > div > input {
     color: transparent;
-    text-shadow: 0 0 0 black;
+    text-shadow: 0 0 0 #282828;
     border: none;
     background: transparent;
     width: 150px;
@@ -56,22 +56,29 @@ body {
     font-family: BebasNeue, 'Courier New', Courier, monospace;
 }
 
-.main > .float > p {
+.main > .calc > div > p {
     font-weight: bold;
     margin-left: 5px;
     margin-top: -5px;
     font-size: 17px;
 }
 
-.main > .float > hr {
-    border: 2px solid black;
+.main > .calc > div > hr {
+    border: 2px solid #282828;
     width: 100px;
     text-align: left;
     margin-left: 5px;
     margin-top: -20px;
 }
 
-.main > h1 {
+.main > .calc > div > button {
+    height: 100px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: transparent;
+}
+
+.main > .calc > h1 {
     font-size: 100px;
     margin-right: 70px;
     margin-left: 20px;
@@ -80,6 +87,18 @@ body {
 
 .main .float {
     float: left;
+}
+
+.formula {
+    color: #ECEFF4;
+    background-color: #282828;
+    height: 10em;
+    padding-left: 4em;
+    padding-top: 1em;
+}
+
+.formula h1 {
+    font-size: 30px;
 }
 
 a:link { color: #FEFEFE; text-decoration: none;}
