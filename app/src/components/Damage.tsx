@@ -46,11 +46,9 @@ export default class Damage extends Component {
                     <br />
                     <div className="formula">
                         <h1>Formula</h1>
-                        <p>1 + 1 은 귀여미</p>
+                        <p>d</p>
                     </div>
                 </div>
-                
-                
             </div>
         )
     }

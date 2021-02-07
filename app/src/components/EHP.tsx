@@ -20,7 +20,6 @@ export default class EHP extends Component {
         const hp = +this.state.hp
         const df = +this.state.df
         this.setState({ value: hp * ((df / 100) + 1) })
-        
     }
 
     render() {
@@ -53,8 +52,6 @@ export default class EHP extends Component {
                         <p>{"HP * { ( Def / 100 ) + 1 }"}</p>
                     </div>
                 </div>
-                
-                
             </div>
         )
     }
