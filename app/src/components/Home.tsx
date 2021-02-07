@@ -7,6 +7,9 @@ export default class Home extends Component {
         return (
             <div>
                 <Bar />
+                <div className="main center">
+                    <h1>Hypixel Skyblock Calc</h1>
+                </div>
             </div>
         )
     }

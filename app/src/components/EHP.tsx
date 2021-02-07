@@ -48,6 +48,10 @@ export default class EHP extends Component {
                         </div>
                     </div>
                     <br />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#2e3440" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,149.3C480,117,600,75,720,90.7C840,107,960,181,1080,213.3C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                        </path>
+                    </svg>
                     <div className="formula">
                         <h1>Formula</h1>
                         <p>{"HP * { ( Def / 100 ) + 1 }"}</p>
