@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.74b3c863.chunk.css",
+    "main.js": "./static/js/main.d7af7694.chunk.js",
+    "main.js.map": "./static/js/main.d7af7694.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.0c962d00.js",
+    "runtime-main.js.map": "./static/js/runtime-main.0c962d00.js.map",
+    "static/js/2.841e1605.chunk.js": "./static/js/2.841e1605.chunk.js",
+    "static/js/2.841e1605.chunk.js.map": "./static/js/2.841e1605.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.74b3c863.chunk.css.map": "./static/css/main.74b3c863.chunk.css.map",
+    "static/js/2.841e1605.chunk.js.LICENSE.txt": "./static/js/2.841e1605.chunk.js.LICENSE.txt",
+    "static/media/App.css": "./static/media/bebas-neue-v2-latin-regular.d171c839.woff2",
+    "static/media/black_logo.9b270dfe.png": "./static/media/black_logo.9b270dfe.png",
+    "static/media/logo.85d247d5.png": "./static/media/logo.85d247d5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c962d00.js",
+    "static/js/2.841e1605.chunk.js",
+    "static/css/main.74b3c863.chunk.css",
+    "static/js/main.d7af7694.chunk.js"
+  ]
+}
