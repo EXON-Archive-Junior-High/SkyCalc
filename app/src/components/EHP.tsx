@@ -30,6 +30,7 @@ export default class EHP extends Component {
                 <Bar />
                 <div className="main">
                     <div className="calc">
+                    <h2 className="title">EHP</h2>
                         <div className="float">
                             <input id="damage" placeholder="100" value={this.state.hp} onChange={this.handleChangeFirst.bind(this)}></input>
                             <hr/>

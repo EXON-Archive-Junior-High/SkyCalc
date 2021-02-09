@@ -25,6 +25,7 @@ export default class Damage extends Component {
                 <Bar />
                 <div className="main">
                     <div className="calc">
+                        <h2 className="title">Damage</h2>
                         <div className="float">
                             <input id="damage" placeholder="100" value={this.state.damage} onChange={this.handleChangeFirst.bind(this)}></input>
                             <hr/>

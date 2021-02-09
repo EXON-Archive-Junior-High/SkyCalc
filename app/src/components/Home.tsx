@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
 
 import Bar from './Bar'
@@ -10,7 +9,7 @@ export default class Home extends Component {
             <div>
                 <Bar />
                 <div className="main center">
-                    <img src={blackLogo} height="200px"/>
+                    <img src={blackLogo} height="200px" alt="logo"/>
                     <h1>Hypixel Skyblock Calc</h1>
 
                 </div>
