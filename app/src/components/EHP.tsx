@@ -4,6 +4,12 @@ import Bar from './Bar'
 
 export default class EHP extends Component {
     public state = { hp: '', df: '', value: '' }
+    public second: React.RefObject<any>
+
+    constructor(props: {} | Readonly<{}>) {
+        super(props)
+        this.second = React.createRef()
+    }
 
     public handleChangeFirst(e: React.ChangeEvent<HTMLInputElement>) {
         this.setState({ hp: e.target.value })
@@ -15,6 +21,14 @@ export default class EHP extends Component {
         this.setState({ df: e.target.value })
         console.log(this.state.df)
         this.change()
+    }
+
+    public handleKeyPressFirst(e: React.KeyboardEvent<HTMLInputElement>) {
+        if (e.key === 'Enter') this.second.current.focus()
+    }
+
+    public handleKeyPressSecond(e: React.KeyboardEvent<HTMLInputElement>) {
+        if (e.key === 'Enter') this.change()
     }
 
     public change() {
@@ -32,14 +46,14 @@ export default class EHP extends Component {
                     <div className="calc">
                     <h2 className="title">EHP</h2>
                         <div className="float">
-                            <input id="damage" placeholder="100" value={this.state.hp} onChange={this.handleChangeFirst.bind(this)}></input>
+                            <input id="damage" placeholder="100" value={this.state.hp} onChange={this.handleChangeFirst.bind(this)} onKeyPress={this.handleKeyPressFirst}></input>
                             <hr/>
                             <p>HP</p>
                             <br />
                         </div>
                         <h1 className="float">+</h1>
                         <div className="float">
-                            <input id="strength" placeholder="100" value={this.state.df} onChange={this.handleChangeSecond.bind(this)}></input>
+                            <input id="strength" placeholder="100" value={this.state.df} ref={this.second} onChange={this.handleChangeSecond.bind(this)} onKeyPress={this.handleKeyPressSecond}></input>
                             <hr/>
                             <p>Defence</p>
                             <br />

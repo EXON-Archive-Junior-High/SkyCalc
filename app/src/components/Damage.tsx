@@ -3,6 +3,12 @@ import Bar from './Bar'
 
 export default class Damage extends Component {
     public state = { damage: '', strength: '', value: '' }
+    public second: React.RefObject<any>
+
+    constructor(props: {} | Readonly<{}>) {
+        super(props)
+        this.second = React.createRef()
+    }
 
     public handleChangeFirst(e: React.ChangeEvent<HTMLInputElement>) {
         this.setState({ damage: e.target.value })
@@ -10,6 +16,18 @@ export default class Damage extends Component {
 
     public handleChangeSecond(e: React.ChangeEvent<HTMLInputElement>) {
         this.setState({ strength: e.target.value })
+    }
+
+    public handleKeyPressFirst(e: React.KeyboardEvent<HTMLInputElement>) {
+        if (e.key === 'Enter') {
+            this.second.current.focus()
+        }
+    }
+
+    public handleKeyPressSecond(e: React.KeyboardEvent<HTMLInputElement>) {
+        if (e.key === 'Enter') {
+            this.change()
+        }
     }
 
     public change() {
@@ -27,21 +45,14 @@ export default class Damage extends Component {
                     <div className="calc">
                         <h2 className="title">Damage</h2>
                         <div className="float">
-                            <input id="damage" placeholder="100" value={this.state.damage} onChange={this.handleChangeFirst.bind(this)}></input>
+                            <input id="damage" placeholder="100" value={this.state.damage} onChange={this.handleChangeFirst.bind(this)} onKeyPress={this.handleKeyPressFirst.bind(this)}></input>
                             <hr/>
                             <p>Damage</p>
                             <br />
                         </div>
                         <h1 className="float">+</h1>
                         <div className="float">
-                            <input id="strength" placeholder="100" value={this.state.strength} onChange={this.handleChangeSecond.bind(this)}></input>
-                            <hr/>
-                            <p>Strength</p>
-                            <br />
-                        </div>
-                        <h1 className="float">+</h1>
-                        <div className="float">
-                            <input id="strength" placeholder="100" value={this.state.strength} onChange={this.handleChangeSecond.bind(this)}></input>
+                            <input id="strength" placeholder="100" value={this.state.strength} ref={this.second} onChange={this.handleChangeSecond.bind(this)} onKeyPress={this.handleKeyPressSecond.bind(this)}></input>
                             <hr/>
                             <p>Strength</p>
                             <br />
